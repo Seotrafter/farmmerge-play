@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Farm Merge: Juego de Fusión y Granja – Relájate y Cosecha Diversión</title>
+    <meta name="keywords"
+        content="Farm Merge, juego de fusión, juegos de granja, juego relajante, fusión de cultivos, animales adorables, juego casual, juegos móviles, combinar objetos, decoración rural, cosecha mágica, Android, sin estrés, juego tranquilo, juego de combinar">
+    <meta name="description"
+        content="Farm Merge es un juego móvil donde puedes fusionar cultivos, criar animales y construir tu propia granja encantada. Relájate combinando objetos y decorando un mundo natural lleno de sorpresas. ¡Disfrútalo sin prisas en Android!">
+    <link href="img/ico.webp" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>
+            Usamos cookies para mejorar tu experiencia. Al continuar, aceptas nuestra
+            <a href="cookie.html">Cookie-Richtlinie</a> y nuestros
+            <a href="terms.html">Términos y condiciones</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies">Aceptar</button>
+            <button id="decline-cookies">Rechazar</button>
+        </div>
+    </div>
+
+    <div class="container-xxl  p-0"
+        style="background-color: linear-gradient(to bottom, #f9f5ee, #f0ead6); padding-top: 100px;">
+
+        <div class="container-xxl position-relative p-3">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-lg-0"
+                style="background-color: linear-gradient(to bottom, #f9f5ee, #f0ead6);;">
+                <a href="/" class="navbar-brand p-0">
+                    <h1 class="m-0 text-success" style="font-family: 'Comic Neue', cursive;">
+                        Farm Merge
+                    </h1>
+                </a>
+
+             
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="/" class="nav-item nav-link active" style="color: #5f4933;">Inicio</a>
+                        <a href="about/" class="nav-item nav-link" style="color: #5f4933;">Sobre el juego</a>
+                        <a href="contact/" class="nav-item nav-link" style="color: #5f4933;">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container"
+                style="background: linear-gradient(to bottom, #fdf6e3, #f1ede2); margin-top: 140px; font-family: 'Comic Neue', cursive;">
+                <div class="mx-auto p-4 rounded-4 shadow-lg"
+                    style="max-width: 1100px; background-color: #fffef8; border: 3px solid #d4c19c;">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-12 text-center mb-4">
+                            <img src="img/main.jpeg" alt="Farm Merge juego"
+                                class="img-fluid rounded-4 shadow-sm"
+                                style="max-height: 540px; object-fit: cover; width: 100%; border: 2px solid #c7b48e;">
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <h1 class="mb-3" style="color: #7c5f3f; font-size: 2.4rem; font-weight: bold;">
+                                Farm Merge: ¡Tu granja mágica espera!
+                            </h1>
+                            <p class="text-dark px-md-5" style="font-size: 1.15rem; color: #5a4632;">
+                                Sumérgete en el tranquilo mundo de <strong>Farm Merge</strong>, donde fusionar cultivos,
+                                animales y herramientas
+                                te permite hacer crecer tu propia granja encantada. Cada toque trae vida a los campos,
+                                árboles frutales y animales adorables.
+                                ¡Relájate, cosecha recompensas y conviértete en el mejor granjero fusionador!
+                            </p>
+
+                            <div class="text-muted small mt-4" style="color: #6d5e47;">
+                                ⭐ <strong>4,3</strong> / 5 &nbsp;|&nbsp; <strong>9,29 mil</strong> reseñas<br>
+                                📥 <strong>100 mil+</strong> Descargas<br>
+                                🧒 Clasificación de contenido: <strong>Para mayores de 3 años</strong><br>
+                                ℹ️ Información basada en Google Play
+                            </div>
+
+                            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                                <a href="https://play.google.com/store/apps/details?id=com.lt.fs.google&hl=es"
+                                    target="_blank" class="btn px-4 py-2 rounded-pill shadow-sm"
+                                    style="font-size: 1rem; background-color: #a3c76d; color: #fff; border: 2px solid #88af5c;">
+                                    Descargar en Google Play
+                                </a>
+                                <a href="https://apps.apple.com/es/app/farm-merge/id6443628097?l=es-GB" target="_blank"
+                                    class="btn px-4 py-2 rounded-pill shadow-sm"
+                                    style="font-size: 1rem; background-color: #ffe39f; color: #5a4632; border: 2px solid #ddb55c;">
+                                    Disponible en App Store
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-xxl py-5" style="background: linear-gradient(to bottom, #f9f5ee, #f0ead6);">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+
+                    <div class="col-lg-6 text-center">
+                        <img class="img-fluid rounded-4 shadow wow zoomIn" data-wow-delay="0.5s"
+                            src="img/about.webp" alt="Farm Merge – el juego"
+                            style="max-height: 400px; object-fit: cover; border: 2px solid #cdb893;">
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp text-dark">
+                        <p class="section-title"
+                            style="font-family: 'Comic Neue', cursive; font-size: 1rem; color: #8a6e45;">
+                            Sobre el juego<span></span></p>
+                        <h1 class="mb-4" style="font-size: 1.8rem; color: #6e4e2e;">
+                            Farm Merge – Cosecha, combina y relájate
+                        </h1>
+                        <p class="mb-4" style="font-size: 1.1rem; color: #5f4933;">
+                            ¡Descubre el mundo tranquilo de <strong>Farm Merge</strong>! Fusiona gallinas, árboles
+                            frutales y herramientas de granja
+                            para hacer crecer tu paraíso rural. Cada combinación te da nuevas sorpresas, mejoras para la
+                            granja y personajes amigables
+                            que te ayudarán en tu camino. 🌽🐓
+                            Perfecto para relajarse, decorar y ver florecer tu tierra.
+                        </p>
+                        <a href="#download" class="btn py-sm-3 px-sm-5 rounded-pill mt-3"
+                            style="background-color: #a3c76d; color: #fff; border: 2px solid #88af5c; font-size: 1rem;">
+                            ¡Descargar ahora!
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5" style="background: linear-gradient(to bottom, #f7f3e9, #f0ead6);">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp text-center mb-5">
+                    <p class="section-title justify-content-center"
+                        style="font-family: 'Comic Neue', cursive; color: #8a6e45;">
+                        <span></span>Modos y funciones<span></span>
+                    </p>
+                    <h1 class="text-center mb-3" style="font-size: 2rem; color: #6e4e2e;">
+                        ¿Qué hace especial a Farm Merge?
+                    </h1>
+                    <p style="color: #5f4933;">Un juego lleno de naturaleza, calma y diversión sin prisa.</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-tractor fa-3x mb-3" style="color: #a3c76d;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Fusión de granja</h5>
+                            <p class="m-0 text-muted">Combina cultivos, animales y herramientas para crear nuevos
+                                niveles.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-apple-alt fa-3x mb-3" style="color: #ffb347;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Recolecta cosechas</h5>
+                            <p class="m-0 text-muted">Cultiva manzanas, zanahorias y más para alimentar a tus
+                                animalitos.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-horse-head fa-3x mb-3" style="color: #d4a373;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Animales adorables</h5>
+                            <p class="m-0 text-muted">Cría vacas, pollos y ovejas que te ayudarán en la granja.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-tree fa-3x mb-3" style="color: #82b366;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Naturaleza viva</h5>
+                            <p class="m-0 text-muted">Planta árboles y flores que embellecen tu espacio rural.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-gift fa-3x mb-3" style="color: #f4a261;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Eventos con sorpresas</h5>
+                            <p class="m-0 text-muted">Participa en desafíos especiales y gana recompensas únicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-heart fa-3x mb-3" style="color: #e76f51;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Relajación pura</h5>
+                            <p class="m-0 text-muted">Sin prisas ni estrés, solo tranquilidad y alegría.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-hammer fa-3x mb-3" style="color: #c4a484;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Construcción creativa</h5>
+                            <p class="m-0 text-muted">Mejora edificios, establos y decoraciones de forma libre.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="d-flex flex-column text-center rounded bg-white h-100 p-4 border shadow-sm"
+                            style="border-color: #bda87f;">
+                            <i class="fas fa-seedling fa-3x mb-3" style="color: #7fc97f;"></i>
+                            <h5 class="mb-2" style="color: #7b5a38;">Progreso constante</h5>
+                            <p class="m-0 text-muted">Cada día tu granja crece con nuevas fusiones y descubrimientos.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5" style="background: linear-gradient(to bottom, #fbf7ef, #f4ede1);">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+
+                    <div class="col-lg-6 wow fadeInRight text-dark">
+                        <p class="section-title" style="color: #8a6e45; font-family: 'Comic Neue', cursive;">
+                            ¿Por qué jugar?<span></span>
+                        </p>
+                        <h2 class="mb-4" style="color: #6e4e2e;">Farm Merge no es solo un juego... ¡es tu rincón rural
+                            de calma y alegría!</h2>
+                        <ul class="list-unstyled" style="color: #5f4933; font-size: 1.05rem;">
+
+                            <li class="mb-3">
+                                ✔️ Fusiona objetos del campo para descubrir herramientas y sorpresas útiles
+                            </li>
+
+                            <li class="mb-3">
+                                ✔️ Recoge recompensas diarias mientras cultivas y mejoras tu granja
+                            </li>
+
+                            <li class="mb-3">
+                                ✔️ Decora tu terreno con caminos de tierra, flores y construcciones de madera
+                            </li>
+
+                            <li class="mb-3">
+                                ✔️ Ayuda a simpáticos vecinos de la aldea y escucha sus historias
+                            </li>
+
+                            <li class="mb-3">
+                                ✔️ Juega sin estrés, a tu ritmo, con puzzles sencillos y relajantes sonidos del campo
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInLeft text-center">
+                        <img src="img/why.webp" alt="Por qué jugar a Farm Merge" class="img-fluid rounded shadow"
+                            style="max-height: 400px; object-fit: cover; border: 2px solid #d4c19c;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="download" class="container-xxl py-5" style="background: linear-gradient(to bottom, #f9f5ee, #e9e1cf);">
+            <div class="container py-5 px-lg-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center">
+                        <img src="img/download.webp" alt="Farm Merge - descarga" class="img-fluid rounded shadow"
+                            style="max-height: 400px; object-fit: cover; border: 2px solid #d4c19c;">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="section-title mb-2" style="font-family: 'Comic Neue', cursive; color: #8a6e45;">
+                            Descarga el juego
+                        </p>
+                        <h2 class="mb-4" style="font-size: 2rem; color: #6e4e2e;">
+                            ¿Listo para relajarte en Farm Merge?
+                        </h2>
+                        <p class="text-muted mb-4" style="font-size: 1.1rem;">
+                            Crea la granja de tus sueños fusionando cultivos, animales y herramientas. Vive momentos
+                            tranquilos mientras decoras, cosechas y descubres nuevas sorpresas.
+                        </p>
+
+                        <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+
+                            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                                <a href="https://play.google.com/store/apps/details?id=com.lt.fs.google&hl=es"
+                                    target="_blank" class="btn px-4 py-2 rounded-pill shadow-sm"
+                                    style="font-size: 1rem; background-color: #a3c76d; color: #fff; border: 2px solid #88af5c;">
+                                    Descargar en Google Play
+                                </a>
+                                <a href="https://apps.apple.com/es/app/farm-merge/id6443628097?l=es-GB" target="_blank"
+                                    class="btn px-4 py-2 rounded-pill shadow-sm"
+                                    style="font-size: 1rem; background-color: #ffe39f; color: #5a4632; border: 2px solid #ddb55c;">
+                                    Disponible en App Store
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5" style="background: linear-gradient(to bottom, #fbf7ef, #f1ead8);">
+            <div class="container py-5 px-lg-5 wow fadeInUp">
+                <p class="section-title text-center" style="color: #8a6e45; font-family: 'Comic Neue', cursive;">
+                    <span></span>Opiniones reales<span></span>
+                </p>
+                <h2 class="text-center mb-5" style="color: #6e4e2e;">¿Qué dicen los jugadores de Farm Merge?</h2>
+
+                <div class="row g-4 text-dark">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testimonial-item bg-white border rounded p-4 h-100 shadow-sm"
+                            style="border-color: #cdb893;">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/rev-1.png" alt="Jugador 1" class="rounded-circle me-3"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0" style="color: #7b5a38;">Tomás R.</h6>
+                                    <small class="text-muted">Amante de la naturaleza</small>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-warning">★★★★★</div>
+                            <p class="fs-6 m-0">Farm Merge es mi escape favorito. Me encanta ver cómo los campos crecen
+                                al fusionar cultivos. ¡Muy relajante!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testimonial-item bg-white border rounded p-4 h-100 shadow-sm"
+                            style="border-color: #cdb893;">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/rev-2.png" alt="Jugador 2" class="rounded-circle me-3"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0" style="color: #7b5a38;">Camila V.</h6>
+                                    <small class="text-muted">Decoradora rural</small>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-warning">★★★★★</div>
+                            <p class="fs-6 m-0">Me fascina decorar mi granja con flores y casitas. Es un juego lleno de
+                                ternura y estilo propio.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testimonial-item bg-white border rounded p-4 h-100 shadow-sm"
+                            style="border-color: #cdb893;">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/rev-3.png" alt="Jugador 3" class="rounded-circle me-3"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0" style="color: #7b5a38;">Felipe H.</h6>
+                                    <small class="text-muted">Fan de los juegos lentos</small>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-warning">★★★★★</div>
+                            <p class="fs-6 m-0">Fusionar herramientas y cosechas es muy adictivo. ¡Cada mejora se siente
+                                como un logro!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testimonial-item bg-white border rounded p-4 h-100 shadow-sm"
+                            style="border-color: #cdb893;">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/rev-4.png" alt="Jugador 4" class="rounded-circle me-3"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0" style="color: #7b5a38;">Isidora M.</h6>
+                                    <small class="text-muted">Jugadora creativa</small>
+                                </div>
+                            </div>
+                            <div class="mb-2 text-warning">★★★★★</div>
+                            <p class="fs-6 m-0">Me gusta jugar antes de dormir. Tiene música tranquila y me ayuda a
+                                desconectar del día.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-dark footer wow fadeIn"
+            style="background: linear-gradient(to bottom, #f9f5ee, #e9e1cf);">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-success h5 mb-4">Contacto<span></span></p>
+                        <p style="color: #5a4632;"><i class="fa fa-phone-alt me-2 text-success"></i>+56 4 9123 1382</p>
+                        <p style="color: #5a4632;"><i
+                                class="fa fa-envelope me-2 text-success"></i>soporte@farmmerge-play.com</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-success h5 mb-4">Información<span></span></p>
+                        <a class="btn btn-link" href="cookie.html"
+                            style="color: #6e4e2e; text-decoration: none;">Política de Cookies</a><br>
+                        <a class="btn btn-link" href="privacy.html"
+                            style="color: #6e4e2e; text-decoration: none;">Política de Privacidad</a><br>
+                        <a class="btn btn-link" href="terms.html"
+                            style="color: #6e4e2e; text-decoration: none;">Términos y Condiciones</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-success h5 mb-4">Navegación<span></span></p>
+                        <a class="btn btn-link" href="/" style="color: #6e4e2e; text-decoration: none;">Inicio</a><br>
+                        <a class="btn btn-link" href="about/" style="color: #6e4e2e; text-decoration: none;">Sobre el
+                            juego</a><br>
+                        <a class="btn btn-link" href="contact/"
+                            style="color: #6e4e2e; text-decoration: none;">Contacto</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container px-lg-5">
+                <div class="copyright mt-4 pt-3 border-top" style="border-color: #b9d2c1;">
+                    <div class="row">
+                        <div class="col-md-12 text-center" style="color: #5f4933;">
+                            &copy; <a class="border-bottom text-success" href="/">farmmerge-play.com</a> — Todos los
+                            derechos
+                            reservados.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
